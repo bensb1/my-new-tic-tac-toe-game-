@@ -5,11 +5,20 @@ using UnityEngine.UI;
 
 public class GridSpace : MonoBehaviour
 {
+    private GameController gameController; 
     public Button button;
     public Text buttonText;
-    public string playerSide;
+    
+
+    public void SetGameControllerReference(GameController controller)
+    {
+        gameController = controller;
+    }
     public void SetSpace()
     {
-        buttonText.text = playerSide; button.interactable = false;
+        buttonText.text = gameController.GetPlayerSide();
+        button.interactable = false;
+        gameController.EndTurn();
     }
+
 }
