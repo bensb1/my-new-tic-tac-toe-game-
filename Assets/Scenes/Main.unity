@@ -1611,6 +1611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 883140758}
+  restartButton: {fileID: 1055386211}
   gameOverText: {fileID: 529505619}
   buttonList:
   - {fileID: 92817550}
