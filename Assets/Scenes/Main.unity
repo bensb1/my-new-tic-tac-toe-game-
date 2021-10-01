@@ -251,6 +251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid Space (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
 --- !u!224 &172454490 stripped
@@ -427,6 +431,10 @@ PrefabInstance:
     - target: {fileID: 4967948472739989613, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
       propertyPath: m_Name
       value: Grid Space (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
@@ -831,6 +839,7 @@ GameObject:
   - component: {fileID: 671278911}
   - component: {fileID: 671278912}
   - component: {fileID: 671278913}
+  - component: {fileID: 671278914}
   m_Layer: 5
   m_Name: Player X
   m_TagString: Untagged
@@ -896,6 +905,62 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &671278914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671278910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 671278913}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1468765267}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: SetStartingSide
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: X
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 4967948472739989613, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
       propertyPath: m_Name
       value: Grid Space (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
@@ -1336,6 +1405,10 @@ PrefabInstance:
     - target: {fileID: 4967948472739989613, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
       propertyPath: m_Name
       value: Grid Space (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
@@ -1815,6 +1888,7 @@ GameObject:
   - component: {fileID: 1303996974}
   - component: {fileID: 1303996975}
   - component: {fileID: 1303996976}
+  - component: {fileID: 1303996977}
   m_Layer: 5
   m_Name: Player O
   m_TagString: Untagged
@@ -1880,6 +1954,62 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1303996977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303996973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1303996976}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1468765267}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: SetStartingSide
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: O
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1443605292 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4967948474677032007, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
@@ -2172,6 +2302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid Space (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
 --- !u!224 &1619014874 stripped
@@ -2382,6 +2516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid Space (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
 --- !u!224 &1958303981 stripped
@@ -2489,6 +2627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid Space (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
 --- !u!224 &2016817726 stripped
@@ -2591,6 +2733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid Space (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
 --- !u!224 &2052422791 stripped
@@ -2692,6 +2838,10 @@ PrefabInstance:
     - target: {fileID: 4967948472739989613, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
       propertyPath: m_Name
       value: Grid Space
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967948472739989615, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ab89e2c1c7724478cae1207d5cbc38, type: 3}

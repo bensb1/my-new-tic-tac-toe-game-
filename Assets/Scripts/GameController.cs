@@ -6,6 +6,7 @@ using UnityEngine.UI;
 {
     public Image panel;
     public Text text;
+    public Button button;
 }
 [System.Serializable] public class PlayerColor
 {
@@ -28,11 +29,11 @@ public class GameController : MonoBehaviour
     {
         
         SetGameControllerReferenceOnButtons();
-        playerSide = "X";
+        
         gameOverPanel.SetActive(false);
         moveCount = 0;
         restartButton.SetActive(false);
-        SetPlayerColors(playerX, playerO);
+     
     }
     public Text[] buttonList;
     void SetGameControllerReferenceOnButtons()
@@ -127,11 +128,12 @@ public class GameController : MonoBehaviour
     }
     public void RestartGame()
     {
-        playerSide = "X";
+        
         moveCount = 0;
         gameOverPanel.SetActive(false);
         restartButton.SetActive(false);
-        SetPlayerColors(playerX, playerO);
+        SetPlayerButtons(true);
+
         SetBoardInteractable(true);
         for (int i = 0; i < buttonList.Length; i++)
         {
@@ -153,6 +155,35 @@ public class GameController : MonoBehaviour
         newPlayer.text.color = activePlayerColor.textColor;
         oldPlayer.panel.color = inactivePlayerColor.panelColor;
         oldPlayer.text.color = inactivePlayerColor.textColor;
+    }
+    public void SetStartingSide(string startingSide)
+    {
+        playerSide = startingSide;
+        if (playerSide == "X")
+        {
+            SetPlayerColors(playerX, playerO);
+        }
+        else
+        {
+            SetPlayerColors(playerO, playerX);
+        }
+    }
+    void StartGame()
+    {
+        SetBoardInteractable(true);
+        SetPlayerButtons(false);
+    }
+    void SetPlayerButtons(bool toggle)
+    {
+        playerX.button.interactable = toggle;
+        playerO.button.interactable = toggle;
+    }
+    void SetPlayerColorsInactive()
+    {
+        playerX.panel.color = inactivePlayerColor.panelColor;
+        playerX.text.color = inactivePlayerColor.textColor;
+        playerO.panel.color = inactivePlayerColor.panelColor;
+        playerO.text.color = inactivePlayerColor.textColor;
     }
 }
 
