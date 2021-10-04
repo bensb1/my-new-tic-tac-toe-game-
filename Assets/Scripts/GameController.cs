@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject restartButton;
     public Text gameOverText;
+    public GameObject startInfo;
     private string playerSide;
     private int moveCount;
     void Awake()
@@ -103,6 +104,7 @@ public class GameController : MonoBehaviour
         if (winningPlayer == "draw")
         {
             SetGameOverText("It's a Draw!");
+            SetPlayerColorsInactive();
         }
         else
         {
@@ -133,8 +135,9 @@ public class GameController : MonoBehaviour
         gameOverPanel.SetActive(false);
         restartButton.SetActive(false);
         SetPlayerButtons(true);
-
-        SetBoardInteractable(true);
+        SetPlayerColorsInactive();
+        startInfo.SetActive(true);
+        //  SetBoardInteractable(true);
         for (int i = 0; i < buttonList.Length; i++)
         {
          
@@ -167,11 +170,13 @@ public class GameController : MonoBehaviour
         {
             SetPlayerColors(playerO, playerX);
         }
+        StartGame();
     }
     void StartGame()
     {
         SetBoardInteractable(true);
         SetPlayerButtons(false);
+        startInfo.SetActive(false);
     }
     void SetPlayerButtons(bool toggle)
     {
