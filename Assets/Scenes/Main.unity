@@ -2224,6 +2224,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 883140758}
   restartButton: {fileID: 1055386211}
   gameOverText: {fileID: 529505619}
+  startInfo: {fileID: 1170322725}
   buttonList:
   - {fileID: 92817550}
   - {fileID: 443841663}
