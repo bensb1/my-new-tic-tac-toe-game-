@@ -170,7 +170,7 @@ public class GameController : MonoBehaviour
         {
             GameOver(playerSide);
         }
-        else if (moveCount >= 9)
+        else if (moveCount >= 20)
         {
             GameOver("draw");
         }
