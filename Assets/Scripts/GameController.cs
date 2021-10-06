@@ -170,6 +170,10 @@ public class GameController : MonoBehaviour
         {
             GameOver(playerSide);
         }
+        else if (buttonList[16].text == playerSide && buttonList[17].text == playerSide && buttonList[18].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
         else if (moveCount >= 20)
         {
             GameOver("draw");
