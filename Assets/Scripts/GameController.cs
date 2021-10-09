@@ -174,7 +174,63 @@ public class GameController : MonoBehaviour
         {
             GameOver(playerSide);
         }
-        else if (moveCount >= 20)
+        else if (buttonList[20].text == playerSide && buttonList[21].text == playerSide && buttonList[22].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[22].text == playerSide && buttonList[23].text == playerSide && buttonList[24].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[20].text == playerSide && buttonList[0].text == playerSide && buttonList[3].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[21].text == playerSide && buttonList[1].text == playerSide && buttonList[4].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[22].text == playerSide && buttonList[2].text == playerSide && buttonList[5].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[23].text == playerSide && buttonList[9].text == playerSide && buttonList[11].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[24].text == playerSide && buttonList[10].text == playerSide && buttonList[12].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[21].text == playerSide && buttonList[1].text == playerSide && buttonList[5].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[21].text == playerSide && buttonList[2].text == playerSide && buttonList[11].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[22].text == playerSide && buttonList[9].text == playerSide && buttonList[12].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[24].text == playerSide && buttonList[9].text == playerSide && buttonList[5].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[23].text == playerSide && buttonList[2].text == playerSide && buttonList[4].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[22].text == playerSide && buttonList[1].text == playerSide && buttonList[3].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (buttonList[20].text == playerSide && buttonList[1].text == playerSide && buttonList[5].text == playerSide)
+        {
+            GameOver(playerSide);
+        }
+        else if (moveCount >= 25)
         {
             GameOver("draw");
         }
