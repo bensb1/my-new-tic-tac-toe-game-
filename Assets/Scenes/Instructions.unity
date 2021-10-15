@@ -881,8 +881,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 118.73}
-  m_SizeDelta: {x: 656.842, y: 237.458}
+  m_AnchoredPosition: {x: 15.5225, y: 96.6403}
+  m_SizeDelta: {x: 667.8869, y: 281.6374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140708841
 MonoBehaviour:
@@ -917,8 +917,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: the rules are that the game is 3 in a row but instead of the grod being
-    3 x 3 it is a 5 x 5 the first to get 3 in a row wins
+  m_Text: 'First choose which side you are on (either noughts or crosses).
+
+
+    Then
+    try and make four in a row within the 5x5 grid.
+
+
+    You cannot place a shape
+    in a tile that already has one in.   '
 --- !u!222 &2140708842
 CanvasRenderer:
   m_ObjectHideFlags: 0
